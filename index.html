@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peacee1's Portfolio</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <button class="theme-switch" onclick="toggleTheme()">
+      Toggle Night Light
+    </button>
+    <header>
+      <h1>Peacee1's Portfolio</h1>
+      <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+          Hello! I am a game developer with 1 year experience in casual games.
+        </p>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+          <div class="project">
+            <img src="project1.png" alt="Project 1" />
+            <h3>City Building</h3>
+            <p>City building simulation game.</p>
+            <a href="#">View Project</a>
+          </div>
+          <div class="project">
+            <img src="project2.png" alt="Project 2" />
+            <h3>Cleaning! More and more</h3>
+            <p>Offine game simulating restaurant management.</p>
+            <a href="#">View Project</a>
+          </div>
+          <div class="project">
+            <img src="project3.png" alt="Project 3" />
+            <h3>Tien Len Mien Nam</h3>
+            <p>
+              Using the database stored on Firebase Realtime Database, the
+              online poker game(Tien Len Mien Nam) is integrated with a security
+              mechanism using ECDSA.
+            </p>
+            <a href="#">View Project</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>
+          If you're interested in working together or just want to say hi, feel
+          free to reach out!
+        </p>
+        <p>
+          Email:
+          <a href="mailto:donangan6903@gmail.com">donangan6903@gmail.com</a>
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2025 Game Developer Portfolio. All rights reserved. |
+        <a href="#">Privacy Policy</a>
+      </p>
+    </footer>
+
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("light-mode");
+      }
+    </script>
+  </body>
+</html>
