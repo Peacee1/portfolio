@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Do Nang An | Unity Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Do Nang An, Unity Game Developer specializing in mobile game development."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      if (localStorage.getItem("death_reboot") === "true") {
+        document.documentElement.classList.add("is-rebooting");
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Boss Health Bar -->
+    <div id="boss-hp-container">
+      <div id="boss-hp-name">DARK WIZARD</div>
+      <div class="hp-bar-bg">
+        <div id="boss-hp-fill"></div>
+      </div>
+      <div id="boss-hp-text">9999 / 9999</div>
+    </div>
+
+    <!-- Background -->
+    <video class="bg-video" autoplay muted loop>
+      <source src="background.mp4" type="video/mp4" />
+    </video>
+    <div class="bg-overlay"></div>
+
+    <!-- ══ HEADER ══ -->
+    <header>
+      <img src="profile-pixel.jpg" alt="Do Nang An" class="profile-pic" />
+      <div class="header-info">
+        <h1>Do Nang An</h1>
+        <div class="role">Unity Game Developer</div>
+        <div class="header-tags">
+          <span class="tag">GAME DEV</span>
+          <span class="tag">MOBILE</span>
+          <span class="tag">1 YEAR EXPERIENCE</span>
+        </div>
+      </div>
+      <button id="theme-toggle" title="Switch theme">☀️ LIGHT</button>
+      <div
+        style="
+          font-size: 0.5rem;
+          color: var(--muted-color);
+          text-align: right;
+          padding-right: 0.8rem;
+        "
+      >
+        <a
+          href="https://actvn.edu.vn/"
+          target="_blank"
+          style="
+            color: var(--muted-color);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--muted-color);
+          "
+          >Academy of Cryptography Techniques</a
+        >
+        <a
+          href="https://actvn.edu.vn/"
+          target="_blank"
+          style="margin-right: -0.4rem"
+        >
+          <img
+            src="12.png"
+            alt="ACTVN"
+            class="inst-icon"
+            style="height: 60px; width: 60px; vertical-align: middle"
+          />
+        </a>
+      </div>
+    </header>
+
+    <!-- ══ NAV ══ -->
+    <nav>
+      <a href="#about">About</a>
+      <a href="#games">Games</a>
+      <a href="#personal">Personal</a>
+      <a href="#achievement">Achievement</a>
+      <a href="#strengths">Strengths</a>
+      <a href="#tools">Tools</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ══ CONTENT ══ -->
+    <div class="page-wrapper">
+      <!-- ABOUT -->
+      <div class="section-box" id="about">
+        <h2>▶ About Me</h2>
+        <div class="about-layout">
+          <img src="peacee1.png" alt="Do Nang An" class="about-img" />
+          <div class="about-text-block">
+            <p>
+              Hello! I'm
+              <strong style="color: var(--accent-color)">Do Nang An</strong>, a
+              Unity Game Developer with one year of experience. I enjoy creating
+              games that bring joy to players, with smooth mechanics, polished
+              visuals, and optimized performance. Beyond work, I enjoy music,
+              cycling, and exploring new games.
+            </p>
+            <p class="school-line">
+              📚 Information Security (Software Security)<br />
+              🏫
+              <a
+                href="https://actvn.edu.vn/"
+                target="_blank"
+                style="
+                  color: var(--accent2-color);
+                  text-decoration: none;
+                  border-bottom: 1px dashed var(--accent2-color);
+                "
+                >Academy of Cryptography Techniques</a
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          style="
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-top: 1px solid #333;
+            padding-top: 1rem;
+          "
+        >
+          <img
+            src="animation.gif"
+            alt="Animation showcase"
+            style="
+              height: 80px;
+              image-rendering: pixelated;
+              border: 2px solid var(--accent-color);
+            "
+          />
+          <p
+            style="
+              font-family: var(--font-vt);
+              font-size: 1rem;
+              color: var(--muted-color);
+              line-height: 1.6;
+            "
+          >
+            I am motivated by contributing to impactful products and helping
+            them succeed. Nothing is more rewarding than watching something I
+            helped build reach real players and enhance their experience.
+          </p>
+        </div>
+      </div>
+
+      <!-- PUBLISHED GAMES -->
+      <div class="section-box" id="games">
+        <h2>▶ Published Games</h2>
+        <div class="games-list">
+          <!-- Game 1 -->
+          <div class="game-card">
+            <div class="game-header">
+              <h3>🌈 Color Tray Puzzle</h3>
+              <div class="game-meta">
+                <span>2025</span>
+                <span>Mobile (Android & iOS)</span>
+                <span>Unity Developer</span>
+                <span>Team: 4 members</span>
+              </div>
+            </div>
+            <div class="game-video-wrap">
+              <img
+                src="ColorTrayPuzzle.png"
+                alt="Color Tray Puzzle"
+                style="
+                  width: 50%;
+                  height: auto;
+                  border: 2px solid var(--accent-color);
+                  display: block;
+                  margin: 0 auto;
+                "
+              />
+            </div>
+            <div class="game-details">
+              <div>
+                <span class="label">🔗 Link: </span>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.g3.colortray"
+                  target="_blank"
+                  style="color: var(--accent-color)"
+                  >▶ Google Play</a
+                >
+                &nbsp;|&nbsp;
+                <a
+                  href="https://youtu.be/UTbFeBdD158"
+                  target="_blank"
+                  style="color: var(--accent2-color)"
+                  >▶ YouTube</a
+                >
+              </div>
+              <div>
+                <span class="label">📋 Description: </span>
+                A puzzle game where players solve challenges by sorting and
+                arranging colorful boxes.
+              </div>
+            </div>
+            <div class="metrics-row">
+              <div class="metric">
+                <span class="m-label">Downloads</span>
+                <span class="m-value placeholder">—</span>
+              </div>
+              <div class="metric">
+                <span class="m-label">D1 Retention</span>
+                <span class="m-value placeholder">—</span>
+              </div>
+              <div class="metric">
+                <span class="m-label">D7 Retention</span>
+                <span class="m-value placeholder">—</span>
+              </div>
+              <div class="metric">
+                <span class="m-label">Revenue/eCPM</span>
+                <span class="m-value placeholder">—</span>
+              </div>
+            </div>
+          </div>
+          <div class="game-card">
+            <div class="game-header">
+              <h3>🌈 Color Flow Fusion</h3>
+              <div class="game-meta">
+                <span>2026</span>
+                <span>Mobile (Android & iOS)</span>
+                <span>Unity Developer</span>
+                <span>Team: 4 members</span>
+              </div>
+            </div>
+            <div class="game-video-wrap">
+              <img
+                src="ColorFlowFusion.webp"
+                alt="Color Tray Puzzle"
+                style="
+                  width: 50%;
+                  height: auto;
+                  border: 2px solid var(--accent-color);
+                  display: block;
+                  margin: 0 auto;
+                "
+              />
+            </div>
+            <div class="game-details">
+              <div>
+                <span class="label">🔗 Link: </span>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.g3.ColorFlowFusion"
+                  target="_blank"
+                  style="color: var(--accent-color)"
+                  >▶ Google Play</a
+                >
+                &nbsp;|&nbsp;
+                <a
+                  href="https://drive.google.com/file/d/18bk0J3R0s1pEuBgAyyQgEJjxki4VVZkM/view?usp=drive_link"
+                  target="_blank"
+                  style="color: var(--accent2-color)"
+                  >▶ YouTube</a
+                >
+              </div>
+              <div>
+                <span class="label">📋 Description: </span>
+                A puzzle game with two mechanics: shoot blocks and find a way
+                for the ball to escape.
+              </div>
+            </div>
+            <div class="metrics-row">
+              <div class="metric">
+                <span class="m-label">Downloads</span>
+                <span class="m-value placeholder">—</span>
+              </div>
+              <div class="metric">
+                <span class="m-label">D1 Retention</span>
+                <span class="m-value placeholder">—</span>
+              </div>
+              <div class="metric">
+                <span class="m-label">D7 Retention</span>
+                <span class="m-value placeholder">—</span>
+              </div>
+              <div class="metric">
+                <span class="m-label">Revenue/eCPM</span>
+                <span class="m-value placeholder">—</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERSONAL PROJECTS -->
+      <div class="section-box" id="personal">
+        <h2>🔧 Personal Projects</h2>
+        <div class="games-list">
+          <!-- Project 1 -->
+          <div class="game-card">
+            <div class="game-header">
+              <h3>🃏 Tien Len Mien Nam</h3>
+              <div class="game-meta">
+                <span>2024</span>
+
+                <span>Unity Developer</span>
+              </div>
+            </div>
+            <div class="game-details">
+              <div>
+                <span class="label">🔗 Link: </span>
+                <a
+                  href="https://drive.google.com/file/d/1srdQFPZaNxFjZp8rg_hOTuBec7FHUPmu/view?usp=drive_link"
+                  target="_blank"
+                  style="color: var(--accent2-color)"
+                  >▶ Watch Video</a
+                >
+              </div>
+              <div>
+                <span class="label">📋 Description: </span>
+                Online poker game (Tiến Lên Miền Nam) using Firebase Realtime
+                Database with ECDSA security mechanism
+              </div>
+              <div>
+                <span class="label">🛠 Tech: </span>
+                Unity · Firebase · ECDSA · C#
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="game-card">
+            <div class="game-header">
+              <h3>🍽 Cleaning! Restaurant</h3>
+              <div class="game-meta">
+                <span>2024</span>
+                <span>Unity Developer</span>
+              </div>
+            </div>
+
+            <div class="game-details">
+              <div>
+                <span class="label">🔗 Link: </span>
+                <a
+                  href="https://drive.google.com/file/d/1S7-vgHx81oVwd8nJCrOAMSvY1VSOATK0/view?usp=drive_link"
+                  target="_blank"
+                  style="color: var(--accent2-color)"
+                  >▶ Watch Video</a
+                >
+              </div>
+              <div>
+                <span class="label">📋 Description: </span>
+                Offline simulation game where players manage and clean a
+                restaurant
+              </div>
+              <div>
+                <span class="label">🛠 Tech: </span>
+                Unity · C#
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIGNATURE ACHIEVEMENT -->
+      <div class="section-box" id="achievement">
+        <h2>⭐ Signature Achievement</h2>
+        <div class="sig-grid">
+          <div class="sig-item sig-full">
+            <label>BEST GAME</label>
+            <p style="color: var(--accent-color); font-size: 1.1rem">
+              🌈 Color Tray Puzzle
+            </p>
+          </div>
+
+          <div class="sig-item">
+            <label>🔗 Link to Play / Video</label>
+            <p>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.g3.colortray"
+                target="_blank"
+                style="
+                  color: var(--accent-color);
+                  font-family: var(--font-vt);
+                  text-decoration: none;
+                "
+                >▶ Google Play</a
+              >
+              &nbsp;|&nbsp;
+              <a
+                href="https://youtu.be/UTbFeBdD158"
+                target="_blank"
+                style="
+                  color: var(--accent2-color);
+                  font-family: var(--font-vt);
+                  text-decoration: none;
+                "
+                >▶ YouTube</a
+              >
+            </p>
+          </div>
+
+          <div class="sig-item">
+            <label>📅 Development Duration</label>
+            <p>3 weeks</p>
+          </div>
+
+          <div class="sig-item sig-full">
+            <label>🛠 My Specific Contributions</label>
+            <p>
+              <strong style="color: var(--accent-color)"
+                >Full-cycle Unity Game Developer</strong
+              ><br /><br />
+              • Solely responsible for designing and implementing the entire
+              game architecture and codebase<br />
+              • Developed core puzzle mechanics, including grid system design,
+              color-sorting logic, and win-condition validation<br />
+              • Built the UI system, game state machine, and a scalable level
+              management structure<br />
+              • Implemented the Android build pipeline and independently
+              published the game on Google Play<br />
+              • Optimized performance through memory management improvements and
+              runtime efficiency enhancements
+            </p>
+          </div>
+
+          <div class="sig-item">
+            <label>🏆 Proudest Metric / Outcome</label>
+            <p>
+              Single-handedly developed and launched the game on Google Play in
+              just 3 weeks
+            </p>
+          </div>
+
+          <div class="sig-item">
+            <label>📖 Lessons Learned</label>
+            <p>
+              • Managing a solo project requires strong prioritization and
+              disciplined time management to deliver on schedule<br />
+              • Applying performance optimization techniques (Object Pooling,
+              draw call reduction) to improve performance on low-end Android
+              devices<br />
+              • Understanding the Android publishing pipeline end-to-end is
+              essential to avoid deployment issues and ensure a smooth release
+              process
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CORE STRENGTHS -->
+      <div class="section-box" id="strengths">
+        <h2>💪 Core Strengths</h2>
+        <div class="strengths-grid">
+          <div class="strength-card">
+            <div class="s-icon"><i class="fas fa-star"></i></div>
+            <h4>PRIMARY EXPERTISE</h4>
+            <p>
+              Unity Game Development — gameplay systems, state machines, physics
+              & collision
+            </p>
+          </div>
+
+          <div class="strength-card">
+            <div class="s-icon"><i class="fas fa-layer-group"></i></div>
+            <h4>SECONDARY EXPERTISE</h4>
+            <p>
+              Proficient in mobile game architecture — capable of building
+              scalable, maintainable systems for Android and iOS platforms
+            </p>
+          </div>
+
+          <div class="strength-card">
+            <div class="s-icon"><i class="fas fa-bolt"></i></div>
+            <h4>UNIQUE SKILL</h4>
+            <p>
+              Working knowledge of puzzle game design, crafting engaging level
+              layouts, intuitive mechanics, and well-balanced difficulty curves
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOOLS & TECH -->
+      <div class="section-box" id="tools">
+        <h2>🛠 Tools & Tech</h2>
+
+        <div class="skill-section-title">LANGUAGES</div>
+        <div class="skills-grid">
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">JS</span>
+          <span class="skill-tag">Python</span>
+        </div>
+
+        <div class="skill-section-title">ENGINE & FRAMEWORK</div>
+        <div class="skills-grid">
+          <span class="skill-tag">Unity</span>
+          <span class="skill-tag">Android Studio</span>
+          <span class="skill-tag">SmartFoxServer</span>
+        </div>
+
+        <div class="skill-section-title">ARCHITECTURE & PATTERNS</div>
+        <div class="skills-grid">
+          <span class="skill-tag">SOLID</span>
+          <span class="skill-tag">Singleton</span>
+          <span class="skill-tag">State Machine</span>
+          <span class="skill-tag">Object Pooling</span>
+          <span class="skill-tag">Observer</span>
+          <span class="skill-tag">Factory Method</span>
+        </div>
+
+        <div class="skill-section-title">ALGORITHMS</div>
+        <div class="skills-grid">
+          <span class="skill-tag">Pathfinding</span>
+          <span class="skill-tag">Search Algorithms</span>
+          <span class="skill-tag">Sorting / Arrange</span>
+          <span class="skill-tag">Flood Fill</span>
+          <span class="skill-tag">Backtracking</span>
+        </div>
+
+        <div class="skill-section-title">ANIMATION</div>
+        <div class="skills-grid">
+          <span class="skill-tag">DOTween</span>
+          <span class="skill-tag">Ragdoll Animation</span>
+        </div>
+
+        <div class="skill-section-title">UI / UX & DESIGN</div>
+        <div class="skills-grid">
+          <span class="skill-tag">Unity UI Canvas</span>
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Canva</span>
+          <span class="skill-tag">Blender</span>
+          <span class="skill-tag">PTS</span>
+        </div>
+
+        <div class="skill-section-title">TOOLS</div>
+        <div class="skills-grid">
+          <span class="skill-tag">Visual Studio</span>
+          <span class="skill-tag">Git / GitHub</span>
+          <span class="skill-tag">Android Build (Gradle)</span>
+        </div>
+
+        <div class="skill-section-title">OTHER</div>
+        <div class="skills-grid">
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">SQL Server</span>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="section-box" id="contact">
+        <h2>📬 Contact</h2>
+        <div class="contact-row">
+          <a
+            href="https://www.instagram.com/peacee.1"
+            target="_blank"
+            class="contact-icon"
+          >
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="mailto:donangan6903@gmail.com" class="contact-icon">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+          </a>
+          <a
+            href="https://www.facebook.com/onangan.2024/"
+            target="_blank"
+            class="contact-icon"
+          >
+            <i class="fab fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/do-nang-an-b258b2307/"
+            target="_blank"
+            class="contact-icon"
+          >
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <p
+          style="
+            font-family: var(--font-vt);
+            font-size: 0.95rem;
+            color: var(--muted-color);
+            margin-top: 0.8rem;
+          "
+        >
+          📧 donangan6903@gmail.com
+        </p>
+      </div>
+    </div>
+    <!-- end page-wrapper -->
+
+    <!-- ══ FOOTER ══ -->
+    <footer>
+      <img id="footer-char" src="animation3.gif" alt="character" />
+      <img id="boss-char" src="boss_idle.gif" alt="boss" />
+      <div id="boss-name">Dark Wizard</div>
+      <div id="boss-bubble"></div>
+      <div id="char-bubble">
+        <span id="bubble-text"
+          >Hey! What's going on? I'm on a mission —<br />wanna join? ⚔️</span
+        >
+        <div id="bubble-btns">
+          <button id="btn-yes">YES</button>
+          <button id="btn-no">NO</button>
+        </div>
+      </div>
+
+      <!-- Player HP Bar (Floating above head) -->
+      <div id="player-hp-container">
+        <div class="hp-bar-bg">
+          <div id="player-hp-fill"></div>
+        </div>
+        <div id="player-hp-text">500 / 500</div>
+      </div>
+
+      <p>© 2025 Do Nang An &nbsp;|&nbsp; Video BG: Silly Potato</p>
+    </footer>
+
+    <div id="death-overlay"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
